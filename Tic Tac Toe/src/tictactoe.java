@@ -60,8 +60,10 @@ public class tictactoe {
 	{
 		JFrame f = new JFrame();
 		startgame = JOptionPane.showInputDialog(f,"Choose X or O").toUpperCase();
+		if(startgame.equalsIgnoreCase("X")||startgame.equalsIgnoreCase("O")) {
 		JOptionPane.showMessageDialog(frame, "All the best\nLet's Start!!!!", "Tic Tac Toe", JOptionPane.INFORMATION_MESSAGE);
-		System.out.println(startgame);
+		}
+//		System.out.println(startgame);
 		checkStartGame();
 	}
 	
